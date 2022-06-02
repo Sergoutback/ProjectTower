@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using CodeMVC.UserInput;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -9,43 +10,33 @@ public class PlayerController : MonoBehaviour
     private bool RunOrAttack = true;
     [Header("Controll Options")]
 
-    [SerializeField]
-    private bool CanRun = true;
-    [SerializeField]
-    private bool CanJump = true;
-    [SerializeField]
-    private bool CanSit = true;
-    [SerializeField]
-    private float Speed;
-    [SerializeField]
-    private float JumpForce;
+    [SerializeField] private bool CanRun = true;
+    [SerializeField] private bool CanJump = true;
+    [SerializeField] private bool CanSit = true;
+    [SerializeField] private float Speed;
+    [SerializeField] private float JumpForce;
+    
     [Header("Needs for jumps")]
-    [SerializeField]
-    private float JumpReload;
-    [SerializeField]
-    private float checkRadius;
-    [SerializeField]
-    private Transform groundCheck;
-    [SerializeField]
-    private LayerMask whatIsGround;
-    [SerializeField]
-    private bool isGrounded;
+    [SerializeField] private float JumpReload;
+    [SerializeField] private float checkRadius;
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private LayerMask whatIsGround;
+    [SerializeField] private bool isGrounded;
+    
     [Header("Needible GO")]
-    [SerializeField]
-    private Joystick joystick;
+    [SerializeField] private Joystick joystick;
+    
     private Animator anim;
     private Rigidbody2D rb;
     private bool facingRight = true;
     private static float moveInput = 0;
 
     [Header("Attack Options")]
-    [SerializeField]
-    private LineRenderer line;
+    [SerializeField] private LineRenderer line;
+    [SerializeField] private LayerMask RayMask;
+    
     private PlayerBullet playerBullet;
-    [SerializeField]
-    private LayerMask RayMask;
-   // private RaycastHit2D ray;
-    // Start is called before the first frame update
+    
     void Start()
     {
         line.enabled = false;
@@ -55,8 +46,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         playerBullet = GetComponent<PlayerBullet>();
     }
-
-    // Update is called once per frame
+    
     void FixedUpdate()
     {
             isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);     
@@ -110,17 +100,10 @@ public class PlayerController : MonoBehaviour
                 line.SetPosition(0, ray.origin);
                 line.SetPosition(1, new Vector2(joystick.Horizontal * 100, joystick.Vertical * 100));
             }
-            //   print(hit.distance);
-           //   print(gameObject.transform.position );
-            //  print(hit.point);
-         //   print(ray.direction);
-         //   print(new Vector2(Mathf.Abs(joystick.Horizontal) * 10, joystick.Vertical * 10));
         }
         rb.velocity = new Vector2(Mathf.Round(moveInput)*Speed, rb.velocity.y);
-       
 
-        
-            if (facingRight == false && joystick.Horizontal > 0)
+        if (facingRight == false && joystick.Horizontal > 0)
             {
 
                 Flip();
@@ -161,17 +144,7 @@ public class PlayerController : MonoBehaviour
             RunOrAttack = !RunOrAttack;
             if (RunOrAttack)
             {
-                //  if (facingRight)
-               //   {
                   playerBullet.Attack(line.GetPosition(0), line.GetPosition(1));
-              // print(line.GetPosition(0));
-               // print(line.GetPosition(1));
-               //   }
-               //   else
-               //   {
-               //   playerBullet.Attack(line.GetPosition(0), line.GetPosition(1));
-               //   playerBullet.Attack(new Vector3(-line.GetPosition(0).x, line.GetPosition(0).y, line.GetPosition(0).z),new Vector3(-line.GetPosition(1).x, line.GetPosition(1).y, line.GetPosition(1).z));
-               //   }
 
                 line.enabled = false;
                 Time.timeScale = 1f;
@@ -179,8 +152,6 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-               
-               // line.enabled = true;
                 Time.timeScale = 0.1f;
                 Time.fixedDeltaTime = 0.02f * 0.1f;
             }
