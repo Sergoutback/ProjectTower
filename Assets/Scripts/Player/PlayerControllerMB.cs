@@ -4,7 +4,7 @@ using CodeMVC.UserInput;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class PlayerController : MonoBehaviour
+public class PlayerControllerMB : MonoBehaviour
 {
     [SerializeField]
     private bool RunOrAttack = true;

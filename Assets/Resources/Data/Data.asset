@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3332e7a3b3cd4be99385739d2c476229, type: 3}
   m_Name: Data
   m_EditorClassIdentifier: 
-  _playerDataPath: UnitSettings
+  _playerDataPath: PlayerSettings
   _enemyDataPath: 
   _inputDataPath: InputSettings

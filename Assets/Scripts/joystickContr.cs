@@ -8,7 +8,7 @@ public class joystickContr : MonoBehaviour, IPointerUpHandler
     [SerializeField]
     private Joystick joystick;
     [SerializeField]
-    private PlayerController playerController;
+    private PlayerControllerMB playerController;
 
     public void OnPointerUp(PointerEventData eventData)
     {

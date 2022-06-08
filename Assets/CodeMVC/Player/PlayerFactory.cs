@@ -1,24 +1,21 @@
-﻿using CodeMVC.Extension;
-using CodeMVC.Model;
+﻿using CodeMVC.Data;
 using UnityEngine;
 
 namespace CodeMVC.Player
 {
     public sealed class PlayerFactory : IPlayerFactory
     {
-        private readonly IPlayerModel _playerData;
+        private readonly PlayerData _playerData;
 
-        public PlayerFactory(IPlayerModel playerData)
+        public PlayerFactory(PlayerData playerData)
         {
             _playerData = playerData;
         }
 
-        public GameObject CreatePlayer()
+        public PlayerProvider CreatePlayer()
         {
-            return new GameObject(_playerData.Name)
-                .AddSprite(_playerData.Sprite)
-                .AddPolygonCollider2D()
-                .AddRigidbody2D(1);
+            var playerProvider = _playerData.GetPlayer();
+            return Object.Instantiate(playerProvider);
         }
     }
 }

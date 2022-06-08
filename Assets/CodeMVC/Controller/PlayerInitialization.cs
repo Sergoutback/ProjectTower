@@ -1,5 +1,8 @@
-﻿using CodeMVC.Interface;
+﻿using CodeMVC.Data;
+using CodeMVC.Interface;
 using CodeMVC.Player;
+using CodeMVC.StateMachines;
+using CodeMVC.StateMachines.PlayerState;
 using UnityEngine;
 
 namespace CodeMVC.Controller
@@ -7,7 +10,7 @@ namespace CodeMVC.Controller
     internal sealed class PlayerInitialization : IInitialization
     {
         private readonly IPlayerFactory _playerFactory;
-        private GameObject _player;
+        private PlayerProvider _player;
 
         public PlayerInitialization(IPlayerFactory playerFactory, Vector2 positionPlayer)
         {
@@ -20,7 +23,7 @@ namespace CodeMVC.Controller
         {
         }
 
-        public GameObject GetPlayer()
+        public PlayerProvider GetPlayer()
         {
             return _player;
         }
