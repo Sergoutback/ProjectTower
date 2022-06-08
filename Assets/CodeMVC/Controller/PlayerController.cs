@@ -2,7 +2,6 @@
 using CodeMVC.Interface;
 using CodeMVC.StateMachines;
 using CodeMVC.StateMachines.PlayerState;
-using Unity.Mathematics;
 using UnityEngine;
 
 namespace CodeMVC.Controller
@@ -10,7 +9,7 @@ namespace CodeMVC.Controller
     public sealed class PlayerController: IExecute, ILateExecute, ICleanup
     {
         public float MovementSpeed { get; private set; }
-        public bool IsGround { get; private set; }
+        public bool IsGround { get; set; }
         
         
         private readonly IUserInputProxy _horizontalInputProxy;
@@ -39,7 +38,7 @@ namespace CodeMVC.Controller
             _horizontalInputProxy.AxisOnChange += HorizontalOnAxisOnChange;
             _verticalInputProxy.AxisOnChange += VerticalOnAxisOnChange;
             _playerProvider.OnTriggetEnterChange += CheckTriggetOverlap;
-        
+            
             movementSM = new StateMachine();
             standing = new StandingState(this, movementSM, (_horizontalInputProxy, _verticalInputProxy));
             jumping = new JumpingState(this, movementSM, (_horizontalInputProxy, _verticalInputProxy));

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: EnemySettings
   m_EditorClassIdentifier: 
   _enemyInfos:
-  - Type: 1
+  - Type: 2
     EnemyPrefab: {fileID: 0}

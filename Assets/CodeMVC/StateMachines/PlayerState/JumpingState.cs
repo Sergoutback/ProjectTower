@@ -6,7 +6,6 @@ namespace CodeMVC.StateMachines.PlayerState
 {
     public class JumpingState : State
     {
-        private bool _grounded;
 
         public JumpingState(PlayerController player, StateMachine stateMachine, (IUserInputProxy inputHorizontal, IUserInputProxy inputVertical) input) : base(player, stateMachine, input)
         {
@@ -14,26 +13,20 @@ namespace CodeMVC.StateMachines.PlayerState
 
         public override void Enter()
         {
-            Debug.Log("jump");
             base.Enter();
-            _grounded = false;
+            Debug.Log("jump");
             _player.Jump();
+            _player.IsGround = false;
+            Debug.Log(_player.IsGround);
         }
 
         public override void LogicUpdate()
         {
             base.LogicUpdate();
-            if (_grounded)
+            if (_player.IsGround)
             {
                 _stateMachine.ChangeState(_player.standing);
             }
-        }
-
-        public override void PhysicsUpdate()
-        {
-            base.PhysicsUpdate();
-            _grounded = _player.IsGround;
-            Debug.Log(_grounded);
         }
     }
 }

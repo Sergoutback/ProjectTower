@@ -17,12 +17,11 @@ namespace CodeMVC.Data
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            OnTriggetEnterChange?.Invoke(other.gameObject.GetComponent<TilemapCollider2D>());
-        }
-
-        private void OnTriggerExit2D(Collider2D other)
-        {
-            OnTriggetEnterChange?.Invoke(other.gameObject.GetComponent<TilemapCollider2D>());
+            if (other.gameObject.GetComponent<TilemapCollider2D>())
+            {
+                OnTriggetEnterChange?.Invoke(true);
+            }
+            
         }
     }
 }
