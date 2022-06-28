@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour
 {
+    public GameObject gameObjectPlayer;
 
     [SerializeField]
     private List<GameObject> AllEnemies = new List<GameObject>(0);
@@ -16,13 +17,16 @@ public class Door : MonoBehaviour
         {
             if (collision.GetComponent<PlayerInventory>().HasKey)
             {
-                NextLevel();
+                NextFloor();
             }
         }
     }
 
-    private void NextLevel()
+    private void NextFloor()
     {
-        SceneManager.LoadScene(0);
+        Vector3 newPlayerPosition = new Vector3(1.14f, 13.21f, 0.0f);
+
+        gameObjectPlayer.transform.position = newPlayerPosition;
+
     }
 }

@@ -133,7 +133,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6813668035977325968, guid: a2c9263015eded64dbddb6ab6533248d, type: 3}
   m_PrefabInstance: {fileID: 6813668035963213880}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 436668424}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a78e065d1b819234aa0e437a96439ddc, type: 3}
@@ -239,6 +239,11 @@ MonoBehaviour:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6614688816899479643, guid: a82e520109a81d742a4d2d0720c4fb6f, type: 3}
   m_PrefabInstance: {fileID: 1222967076}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &436668424 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6813668035977325979, guid: a2c9263015eded64dbddb6ab6533248d, type: 3}
+  m_PrefabInstance: {fileID: 6813668035963213880}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &493074261
 GameObject:
@@ -492,6 +497,10 @@ PrefabInstance:
     - target: {fileID: 6614688816899479643, guid: a82e520109a81d742a4d2d0720c4fb6f, type: 3}
       propertyPath: m_Name
       value: Enemy (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6614688816899479643, guid: a82e520109a81d742a4d2d0720c4fb6f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6614688816899479647, guid: a82e520109a81d742a4d2d0720c4fb6f, type: 3}
       propertyPath: m_RootOrder
@@ -2655,6 +2664,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6614688816899479643, guid: a82e520109a81d742a4d2d0720c4fb6f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6614688816899479647, guid: a82e520109a81d742a4d2d0720c4fb6f, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -3888,6 +3901,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6614688816899479643, guid: a82e520109a81d742a4d2d0720c4fb6f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6614688816899479647, guid: a82e520109a81d742a4d2d0720c4fb6f, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -5072,6 +5089,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6614688816899479643, guid: a82e520109a81d742a4d2d0720c4fb6f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6614688816899479647, guid: a82e520109a81d742a4d2d0720c4fb6f, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -5145,6 +5166,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.090691805
       objectReference: {fileID: 0}
+    - target: {fileID: 6059412294661254434, guid: e8ffda111afb9c54dbc143bfd24e4620, type: 3}
+      propertyPath: gameObjectPlayer
+      value: 
+      objectReference: {fileID: 436668424}
     - target: {fileID: 6059412294661254434, guid: e8ffda111afb9c54dbc143bfd24e4620, type: 3}
       propertyPath: AllEnemies.Array.size
       value: 3
@@ -5240,11 +5265,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6813668035977325980, guid: a2c9263015eded64dbddb6ab6533248d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.8325505
+      value: 1.15
       objectReference: {fileID: 0}
     - target: {fileID: 6813668035977325980, guid: a2c9263015eded64dbddb6ab6533248d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.88
+      value: 13.21
       objectReference: {fileID: 0}
     - target: {fileID: 6813668035977325980, guid: a2c9263015eded64dbddb6ab6533248d, type: 3}
       propertyPath: m_LocalPosition.z
