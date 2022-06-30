@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class Door : MonoBehaviour
 {
     public GameObject gameObjectPlayer;
+    public GameObject gameObjectstartPoition;
 
     [SerializeField]
     private List<GameObject> AllEnemies = new List<GameObject>(0);
@@ -24,7 +25,7 @@ public class Door : MonoBehaviour
 
     private void NextFloor()
     {
-        Vector3 newPlayerPosition = new Vector3(1.14f, 13.21f, 0.0f);
+        Vector3 newPlayerPosition = new Vector3(-1.5f, 14.05f, 0.0f);
 
         gameObjectPlayer.transform.position = newPlayerPosition;
 
