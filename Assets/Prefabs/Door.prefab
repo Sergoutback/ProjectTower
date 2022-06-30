@@ -96,6 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce589b0eb758c8842a26a11b5384c54f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameObjectPlayer: {fileID: 6813668035977325979, guid: a2c9263015eded64dbddb6ab6533248d, type: 3}
+  gameObjectStartPoition: {fileID: 6534100021475292188, guid: 0035533ecf5c03d49975c30faa6140d1, type: 3}
   AllEnemies: []
 --- !u!61 &3899542816948434292
 BoxCollider2D:
