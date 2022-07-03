@@ -3384,9 +3384,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _wrench: {fileID: 1460443183387474462, guid: 23dac53bc13f4154eaa1d5ceb0eb9c67, type: 3}
-  _speed: 3
+  _speed: 5
   _distance: 2
-  _reghargingTime: 4
 --- !u!1001 &1886099893
 PrefabInstance:
   m_ObjectHideFlags: 0
