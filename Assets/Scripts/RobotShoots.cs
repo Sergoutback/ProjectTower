@@ -7,31 +7,69 @@ public class RobotShoots : MonoBehaviour
     [SerializeField] private GameObject _wrench;
     [SerializeField] private float _speed;
     [SerializeField] private float _distance;
+    [SerializeField] private float _reghargingTime;
 
-    //private GameObject newWrench;
+    private bool _wrenchDie;
 
 
-    private void WrenchShoots()
+    private void InstantiateWrench()
     {
-
-        _wrench.transform.Translate(_speed * Time.deltaTime, 0, 0);
-        if (_wrench.transform.position.x >= _distance)
-        {
-            Destroy(_wrench);
-            _wrench = Instantiate<GameObject>(_wrench, transform.position, Quaternion.Euler(90f, 0f, 0f));
-        }
+        _wrench = Instantiate(_wrench, new Vector3(-9, 20, 0), Quaternion.identity);
+        _wrenchDie = false;
     }
+    
 
-    private IEnumerator RobotWrenchShoots()
+    
+    private void Start()
     {
-        WrenchShoots();
+        InstantiateWrench();
 
-        yield return new WaitForSeconds(5f); 
+        //InvokeRepeating("InstantiateWrench", _reghargingTime, _reghargingTime);
     }
 
     private void Update()
-
     {
-        StartCoroutine(RobotWrenchShoots());
+        while (_wrenchDie == false)
+        {
+            _wrench.transform.Translate(_speed * Time.deltaTime, 0, 0);
+        }
+
+
+        if (_wrench.transform.position.x >= _distance && _wrenchDie == false)
+        {
+            Destroy(_wrench);
+
+            _wrenchDie = true;
+
+            InvokeRepeating("InstantiateWrench", _reghargingTime, _reghargingTime);
+        }
+
+        //StartCoroutine(RobotWrenchShoots());
+        //Invoke("InstantiateWrench", _reghargingTime);
+        //InstantiateWrench();
+
+        //StartCoroutine(RobotWrenchShoots());
+
+        //private void WrenchShoots()
+        //{ 
+        //    if (_wrench.transform.position.x >= _distance)
+        //    {
+        //        Destroy(_wrench);
+
+        //        //_wrenchDie = true;
+
+        //        StartCoroutine(RobotWrenchShoots());
+
+        //        //_wrench = Instantiate<GameObject>(_wrench, transform.position, Quaternion.Euler(90f, 0f, 0f));
+        //    }
+        //}
+
+        //private IEnumerator RobotWrenchShoots()
+        //{
+        //    var waitForSeconds = new WaitForSeconds(_reghargingTime);
+
+        //    yield return waitForSeconds; 
+        //}
+
     }
 }
