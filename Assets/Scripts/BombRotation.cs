@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SawRotation : MonoBehaviour
+public class BombRotation : MonoBehaviour
 {
     [SerializeField] private Animation animation;
 
@@ -10,6 +10,6 @@ public class SawRotation : MonoBehaviour
     {
         Animation animation = GetComponent<Animation>();
 
-        animation.Play("SawRotation");
+        animation.Play("BombRotation");
     }
 }
