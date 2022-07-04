@@ -1,0 +1,696 @@
+fileFormatVersion: 2
+guid: d8fff3e2afd623044a6ba8c19591e903
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5908605386530174279
+    second: Walls and floor Transparent 2480x2480_0
+  - first:
+      213: 7976661452775480120
+    second: Walls and floor Transparent 2480x2480_1
+  - first:
+      213: -1480878793046476734
+    second: Walls and floor Transparent 2480x2480_2
+  - first:
+      213: 5631519060732029109
+    second: Walls and floor Transparent 2480x2480_3
+  - first:
+      213: 6312063656429309492
+    second: Walls and floor Transparent 2480x2480_4
+  - first:
+      213: 1845598049911579475
+    second: Walls and floor Transparent 2480x2480_5
+  - first:
+      213: 2723996477924489958
+    second: Walls and floor Transparent 2480x2480_6
+  - first:
+      213: 9071383372232832699
+    second: Walls and floor Transparent 2480x2480_7
+  - first:
+      213: 762773270170236111
+    second: Walls and floor Transparent 2480x2480_8
+  - first:
+      213: -2012501444659098985
+    second: Walls and floor Transparent 2480x2480_9
+  - first:
+      213: -5201763468743533984
+    second: Walls and floor Transparent 2480x2480_10
+  - first:
+      213: -4963886555055072200
+    second: Walls and floor Transparent 2480x2480_11
+  - first:
+      213: 3470542302544154384
+    second: Walls and floor Transparent 2480x2480_12
+  - first:
+      213: -4839392037882968785
+    second: Walls and floor Transparent 2480x2480_13
+  - first:
+      213: -3483477840825682275
+    second: Walls and floor Transparent 2480x2480_14
+  - first:
+      213: 3232727378710743486
+    second: Walls and floor Transparent 2480x2480_15
+  - first:
+      213: -5199608966382308681
+    second: Walls and floor Transparent 2480x2480_16
+  - first:
+      213: 4113885083870511519
+    second: Walls and floor Transparent 2480x2480_17
+  - first:
+      213: 5602888337025587514
+    second: Walls and floor Transparent 2480x2480_18
+  - first:
+      213: 7256486592561319260
+    second: Walls and floor Transparent 2480x2480_19
+  - first:
+      213: -135276921989045732
+    second: Walls and floor Transparent 2480x2480_20
+  - first:
+      213: -2120069358822534501
+    second: Walls and floor Transparent 2480x2480_21
+  - first:
+      213: -4212567260075640697
+    second: Walls and floor Transparent 2480x2480_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 280
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_0
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 1930
+        width: 273
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745371e3b459ff150800000000000000
+      internalID: 5908605386530174279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_1
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 1930
+        width: 284
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83bdb32445bc2be60800000000000000
+      internalID: 7976661452775480120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_2
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 1933
+        width: 274
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2483e01759cd27be0800000000000000
+      internalID: -1480878793046476734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_3
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 2022
+        width: 191
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b826c8afbc272e40800000000000000
+      internalID: 5631519060732029109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_4
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 2016
+        width: 194
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e4f19e374f89750800000000000000
+      internalID: 6312063656429309492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_5
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 2000
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3532223e5a1ec9910800000000000000
+      internalID: 1845598049911579475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_6
+      rect:
+        serializedVersion: 2
+        x: 2257
+        y: 1770
+        width: 195
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eaba144d549dc520800000000000000
+      internalID: 2723996477924489958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_7
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 1637
+        width: 270
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6b2536d1704ed70800000000000000
+      internalID: 9071383372232832699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_8
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 1636
+        width: 278
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4f8a47f3ae59a00800000000000000
+      internalID: 762773270170236111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_9
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 1635
+        width: 268
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a422949982214e0800000000000000
+      internalID: -2012501444659098985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_10
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 1689
+        width: 176
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a10ff6faf9fc7b0800000000000000
+      internalID: -5201763468743533984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_11
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 1545
+        width: 102
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83cda9c5a7bbc1bb0800000000000000
+      internalID: -4963886555055072200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_12
+      rect:
+        serializedVersion: 2
+        x: 1988
+        y: 1735
+        width: 111
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f4c1126d7d92030800000000000000
+      internalID: 3470542302544154384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_13
+      rect:
+        serializedVersion: 2
+        x: 2104
+        y: 1849
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25c12de49607dcb0800000000000000
+      internalID: -4839392037882968785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_14
+      rect:
+        serializedVersion: 2
+        x: 2104
+        y: 1770
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96f3aa2c5338afc0800000000000000
+      internalID: -3483477840825682275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_15
+      rect:
+        serializedVersion: 2
+        x: 2103
+        y: 1744
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9cbb75c64fcdc20800000000000000
+      internalID: 3232727378710743486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_16
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 773
+        width: 321
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2b8db913747d7b0800000000000000
+      internalID: -5199608966382308681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_17
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 778
+        width: 267
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9141eeffa4771930800000000000000
+      internalID: 4113885083870511519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_18
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 938
+        width: 327
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39d694d14571cd40800000000000000
+      internalID: 5602888337025587514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_19
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 197
+        width: 266
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d80030c1834b460800000000000000
+      internalID: 7256486592561319260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_20
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 196
+        width: 306
+        height: 560
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c12e88e2b566f1ef0800000000000000
+      internalID: -135276921989045732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_21
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 588
+        width: 193
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92513896200492e0800000000000000
+      internalID: -2120069358822534501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walls and floor Transparent 2480x2480_22
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 265
+        width: 265
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78830c66564f985c0800000000000000
+      internalID: -4212567260075640697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
