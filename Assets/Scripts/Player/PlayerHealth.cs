@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField]
-    private int HP;
+    private int _hp;
+    public int HP { get { return _hp; } }
+
     private Animator anim;
     private void Start()
     {
@@ -15,10 +17,10 @@ public class PlayerHealth : MonoBehaviour
 
     private void TakeDamage(int value)
     {
-        if (HP - value > 0)
+        if (_hp - value > 0)
         {
-            HP -= value;
-            Debug.Log("HP" + HP);
+            _hp -= value;
+            Debug.Log("HP" + _hp);
             //anim.SetTrigger("Hurt");
             ReloadPlayer();
             Debug.Log("ReloadPlayer();");
