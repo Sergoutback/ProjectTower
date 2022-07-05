@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField]
-    private int HP = 1;
+    private int HP;
     private Animator anim;
     private void Start()
     {
@@ -18,18 +18,22 @@ public class PlayerHealth : MonoBehaviour
         if (HP - value > 0)
         {
             HP -= value;
+            Debug.Log("HP" + HP);
             //anim.SetTrigger("Hurt");
             ReloadPlayer();
+            Debug.Log("ReloadPlayer();");
         }
         else
         {
             DeadBecome();
+            Debug.Log("DeadBecome()");
         }
     }
 
     private void DeadBecome()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
+
         // anim.SetTrigger("Dead");
     }
 
@@ -45,6 +49,15 @@ public class PlayerHealth : MonoBehaviour
 
     public void ReloadPlayer()
     {
-        SceneManager.LoadScene(0);
+        //PlayerBullet.swordTr.SetActive(false);
+        //SceneManager.LoadScene(1);
+
+        //gameObject.SetActive(true);
+
+        //gameObject.GetComponent<Sword>().CanTake = true;
+
+        gameObject.transform.position = new Vector3(-1.6f, 6.72f, 0.0f);
+
+        //InHand = false;
     }
 }

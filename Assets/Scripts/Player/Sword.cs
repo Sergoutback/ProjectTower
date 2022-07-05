@@ -11,7 +11,7 @@ public class Sword : MonoBehaviour
     private PhysicsMaterial2D material2DAttack;
     [SerializeField]
     private PhysicsMaterial2D material2DIdle;
-    private CapsuleCollider2D collider2D;
+    private new CapsuleCollider2D collider2D;
     public Vector3 vel;
     private void Start()
     {
