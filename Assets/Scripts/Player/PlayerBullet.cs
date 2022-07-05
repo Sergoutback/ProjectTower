@@ -16,8 +16,10 @@ public class PlayerBullet : MonoBehaviour
         if(collision.gameObject.tag == "PlayerBullet")
         {
             if (collision.gameObject.GetComponent<Sword>().CanTake &&! InHand) {
+                Debug.Log("collision.gameObject.GetComponent<Sword>()");
                 Physics2D.IgnoreLayerCollision(6, 9, true);
                 InHand = true;
+                Debug.Log("InHand = true");
                 SwordGO = collision.gameObject.GetComponent<Sword>();
                 SwordGO.gameObject.SetActive(false);
                 swordTr.gameObject.SetActive(true);
