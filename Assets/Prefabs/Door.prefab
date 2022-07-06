@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 511691165774693459}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.719322, y: 4.496354, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 193969010648002691, guid: 20ecfe2f1ee67b44cb2abd2a0265b1cd, type: 3}
+  m_Sprite: {fileID: 294624936555732671, guid: dd6470768d1a859409f9e03d90ea97d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce589b0eb758c8842a26a11b5384c54f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjectPlayer: {fileID: 6813668035977325979, guid: a2c9263015eded64dbddb6ab6533248d, type: 3}
-  gameObjectStartPoition: {fileID: 6534100021475292188, guid: 0035533ecf5c03d49975c30faa6140d1, type: 3}
+  gameObjectPlayer: {fileID: 0}
+  currentFloorPoition: {x: 0, y: 0, z: 0}
   AllEnemies: []
 --- !u!61 &3899542816948434292
 BoxCollider2D:
@@ -116,7 +116,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5, y: 1}
+    oldSize: {x: 2.45, y: 3.650391}
     newSize: {x: 1.5, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
