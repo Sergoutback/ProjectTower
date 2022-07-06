@@ -2,64 +2,95 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class PlayerHealth : MonoBehaviour
+namespace Player
 {
-    [SerializeField]
-    private int _hp;
-    public int HP { get { return _hp; } }
-
-    private Animator anim;
-    private void Start()
+    public class PlayerHealth : MonoBehaviour
     {
-        anim = gameObject.GetComponent<Animator>();
-    }
+        [SerializeField] private int _hp;
 
-    private void TakeDamage(int value)
-    {
-        if (_hp - value > 0)
+        public Slider slider;
+
+        //public int SliderHp
+        //{
+        //    get
+        //    {
+        //        return _hp;
+        //    }
+
+        //    set
+        //    {
+        //        _hp = value;
+        //    }
+        //}
+
+        private Animator anim;
+        private void Start()
         {
-            _hp -= value;
-            Debug.Log("HP" + _hp);
-            //anim.SetTrigger("Hurt");
-            ReloadPlayer();
-            Debug.Log("ReloadPlayer();");
-        }
-        else
-        {
-            DeadBecome();
-            Debug.Log("DeadBecome()");
-        }
-    }
+            anim = gameObject.GetComponent<Animator>();
 
-    private void DeadBecome()
-    {
-        SceneManager.LoadScene(2);
+            //SliderHp = _hp;
 
-        // anim.SetTrigger("Dead");
-    }
+            //slider.value = SliderHp;
 
-
-    private void OnCollisionEnter2D(Collision2D coll)
-    {
-        if(coll.gameObject.tag == "Enemy")
-        {
-            TakeDamage(1);
+            //Debug.Log("HP" + SliderHp);
         }
 
-    }
+        public void ChangeSlidierValue(int value)
+        {
+            slider.value = value;
+            Debug.Log("slider.value" + slider.value);
+        }
 
-    public void ReloadPlayer()
-    {
-        //PlayerBullet.swordTr.SetActive(false);
-        //SceneManager.LoadScene(1);
+        private void TakeDamage(int value)
+        {
+            if (_hp - value > 0)
+            {
+                _hp -= value;
+                Debug.Log("_hp" + _hp);
+                //anim.SetTrigger("Hurt");
+                ReloadPlayer();
+                Debug.Log("ReloadPlayer();");
+                ChangeSlidierValue(_hp);
 
-        //gameObject.SetActive(true);
+            }
+            else
+            {
+                DeadBecome();
+                Debug.Log("DeadBecome()");
+            }
+        }
 
-        //gameObject.GetComponent<Sword>().CanTake = true;
+        private void DeadBecome()
+        {
+            SceneManager.LoadScene(2);
 
-        gameObject.transform.position = new Vector3(-1.6f, 6.72f, 0.0f);
+            // anim.SetTrigger("Dead");
+        }
 
-        //InHand = false;
+
+        private void OnCollisionEnter2D(Collision2D coll)
+        {
+            if (coll.gameObject.tag == "Enemy")
+            {
+                TakeDamage(1);
+            }
+
+        }
+
+        public void ReloadPlayer()
+        {
+            //PlayerBullet.swordTr.SetActive(false);
+            //SceneManager.LoadScene(1);
+
+            //gameObject.SetActive(true);
+
+            //gameObject.GetComponent<Sword>().CanTake = true;
+
+            gameObject.transform.position = new Vector3(-1.6f, 6.72f, 0.0f);
+            
+            //InHand = false;
+        }
     }
 }
