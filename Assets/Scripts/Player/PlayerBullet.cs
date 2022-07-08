@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerBullet : MonoBehaviour
 {
+    [SerializeField] private AudioSource soundPlay;
 
     public bool InHand = false;
     private Sword SwordGO;
@@ -11,6 +12,15 @@ public class PlayerBullet : MonoBehaviour
     private GameObject swordTr;
     [SerializeField]
     private float BulletSpeed;
+
+    private void Start()
+    {
+        soundPlay = GetComponent<AudioSource>();
+
+        Debug.Log("PlayerBullet soundPlay = GetComponent<AudioSource>();");
+    }
+
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "PlayerBullet")
@@ -30,6 +40,10 @@ public class PlayerBullet : MonoBehaviour
 
     public void Attack(Vector3 Startpos, Vector3 Endpos)
     {
+        soundPlay.Play();
+
+        Debug.Log("soundPlay.Play();");
+
         swordTr.gameObject.SetActive(false);
         Physics2D.IgnoreLayerCollision(7, 9, false);
         InHand = false;
@@ -47,6 +61,7 @@ public class PlayerBullet : MonoBehaviour
         // SwordGO.GetComponent<Rigidbody2D>().AddForce(Endpos.normalized*BulletSpeed, ForceMode2D.Impulse);
         SwordGO.StartAttack();
         SwordGO.GetComponent<Rigidbody2D>().freezeRotation = false;
+        
 
         //  SwordGO.GetComponent<Rigidbody2D>().AddForce(pos * BulletSpeed);
         /*
@@ -67,7 +82,7 @@ public class PlayerBullet : MonoBehaviour
              SwordGO.transform.rotation = Quaternion.Euler(0, 0, 270- Vector3.Angle(new Vector3(Endpos.x, Endpos.y, 0), new Vector3(Startpos.x-1, Startpos.y, 0)));
          }
          */
-        if(Endpos.x - Startpos.x > 0)
+        if (Endpos.x - Startpos.x > 0)
         {
             SwordGO.transform.rotation = Quaternion.Euler(0, 0, Vector3.Angle((Endpos - Startpos), new Vector3(0, -1, 0)));
         }
