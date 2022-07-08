@@ -144,7 +144,7 @@ Transform:
   m_GameObject: {fileID: 6813668035977325979}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.8325505, y: 6.88, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.18, y: 0.18, z: 1}
   m_Children:
   - {fileID: 6813668035911174427}
   - {fileID: 6813668034687253670}
@@ -253,9 +253,9 @@ MonoBehaviour:
   CanJump: 1
   CanSit: 1
   Speed: 3
-  JumpForce: 10
+  JumpForce: 13
   JumpReload: 0
-  checkRadius: 0.1
+  checkRadius: 1.7
   groundCheck: {fileID: 6813668035911174427}
   whatIsGround:
     serializedVersion: 2
@@ -265,7 +265,7 @@ MonoBehaviour:
   line: {fileID: 0}
   RayMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 10624
 --- !u!70 &6813668035977325982
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -279,8 +279,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.44, y: 0}
-  m_Size: {x: 9, y: 9}
+  m_Offset: {x: -0.34, y: 0}
+  m_Size: {x: 8.49, y: 9.55}
   m_Direction: 0
 --- !u!114 &6813668035977325969
 MonoBehaviour:
@@ -296,7 +296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InHand: 0
   swordTr: {fileID: 6813668034687253669}
-  BulletSpeed: 1.5
+  BulletSpeed: 10
 --- !u!114 &8562666257324254658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,4 +309,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fd7f210909e8694d856eba1bac87fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 1
+  _hp: 10
+  slider: {fileID: 0}
