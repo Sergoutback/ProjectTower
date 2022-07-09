@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    [SerializeField]
-    private int HP = 1;
+    [SerializeField] private AudioSource soundPlay;
+
+    [SerializeField] private int HP = 1;
+
     private Animator anim;
     private void Start()
     {
         anim = gameObject.GetComponent<Animator>();
+
+        soundPlay = GetComponent<AudioSource>();
+
+        Debug.Log("EnemyHealth soundPlay = GetComponent<AudioSource>();");
     }
 
     public void TakeDamage(int value)
@@ -22,6 +28,8 @@ public class EnemyHealth : MonoBehaviour
         else
         {
             // anim.SetTrigger("Dead");
+            soundPlay.Play();
+
             StartCoroutine(DeadAnim());
             //DeadBecome();
         }
@@ -54,7 +62,6 @@ public class EnemyHealth : MonoBehaviour
     public void DeadBecome()
     {
         gameObject.SetActive(false);
-    
     }
     /*
     private void OnCollisionEnter2D(Collision2D coll)
