@@ -154,6 +154,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.DefaultCompany.Fallingtower
+    Standalone: com.DefaultCompany.Falling-tower
   buildNumber:
     Standalone: 0
     iPhone: 0
