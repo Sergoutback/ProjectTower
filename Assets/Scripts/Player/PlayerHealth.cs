@@ -12,29 +12,12 @@ namespace Player
 
         public Slider slider;
 
-        //public int SliderHp
-        //{
-        //    get
-        //    {
-        //        return _hp;
-        //    }
-
-        //    set
-        //    {
-        //        _hp = value;
-        //    }
-        //}
-
         private Animator anim;
+
+
         private void Start()
         {
             anim = gameObject.GetComponent<Animator>();
-
-            //SliderHp = _hp;
-
-            //slider.value = SliderHp;
-
-            //Debug.Log("HP" + SliderHp);
         }
 
         public void ChangeSlidierValue(int value)
@@ -88,7 +71,7 @@ namespace Player
 
             //gameObject.GetComponent<Sword>().CanTake = true;
 
-            gameObject.transform.position = new Vector3(-1.6f, 6.72f, 0.0f);
+            gameObject.transform.position = new Vector3(0f, 6.72f, 0.0f);
             
             //InHand = false;
         }
