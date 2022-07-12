@@ -78,8 +78,8 @@ public class EnemyHealth : MonoBehaviour
         yield return new WaitForSeconds(0.01f);
         gameObject.GetComponent<SpriteRenderer>().color = gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0.2f);
         yield return new WaitForSeconds(0.01f);
-        gameObject.GetComponent<SpriteRenderer>().color = gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0.1f);
-        yield return new WaitForSeconds(0.1f);
+        gameObject.GetComponent<SpriteRenderer>().color = gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0.0f);
+        yield return new WaitForSeconds(1f);
         DeadBecome();
     }
     public void DeadBecome()
