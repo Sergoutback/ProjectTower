@@ -13,7 +13,7 @@ namespace Player
         public Slider slider;
 
         private Animator anim;
-
+        private Transform p;
 
         private void Start()
         {
@@ -33,7 +33,7 @@ namespace Player
                 _hp -= value;
                 Debug.Log("_hp" + _hp);
                 //anim.SetTrigger("Hurt");
-                ReloadPlayer();
+                RepeatLevel();
                 Debug.Log("ReloadPlayer();");
                 ChangeSlidierValue(_hp);
 
@@ -74,6 +74,11 @@ namespace Player
             gameObject.transform.position = new Vector3(0f, 6.72f, 0.0f);
             
             //InHand = false;
+        }
+
+        private void RepeatLevel()
+        {
+            gameObject.transform.Translate(new Vector3(3.0f, 0.0f, 0.0f));
         }
     }
 }
