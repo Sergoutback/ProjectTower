@@ -7,11 +7,12 @@ public class PlayerBullet : MonoBehaviour
     [SerializeField] private AudioSource soundPlay;
 
     public bool InHand = false;
+
     private Sword SwordGO;
-    [SerializeField]
-    private GameObject swordTr;
-    [SerializeField]
-    private float BulletSpeed;
+
+    [SerializeField] private GameObject swordTr;
+
+    [SerializeField] private float BulletSpeed;
 
     private void Start()
     {

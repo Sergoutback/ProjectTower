@@ -10,8 +10,15 @@ public class Door : MonoBehaviour
     
     public Vector3 currentFloorPoition;
 
-    [SerializeField]
-    private List<GameObject> AllEnemies = new List<GameObject>(0);
+    [SerializeField] private List<GameObject> AllEnemies = new List<GameObject>(0);
+
+    [SerializeField] private AudioSource soundPlay;
+
+    [SerializeField] public GameObject door;
+
+    [SerializeField] public Sprite doorOpen;
+
+    [SerializeField] public Sprite doorClose;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,6 +27,7 @@ public class Door : MonoBehaviour
             if (collision.GetComponent<PlayerInventory>().HasKey)
             {
                 Debug.Log("collision.GetComponent<PlayerInventory>().HasKey");
+
                 NextFloor();
             }
         }
@@ -27,9 +35,25 @@ public class Door : MonoBehaviour
 
     private void NextFloor()
     {
-        Vector3 newPlayerPosition = new Vector3(12.0f, 10.0f, 0.0f);
+        soundPlay = GetComponent<AudioSource>();
+
+        soundPlay.Play();
+
+        StartCoroutine(WaitForSeconds());
+
+    }
+
+    IEnumerator WaitForSeconds()
+    {
+        door.GetComponent<SpriteRenderer>().sprite = doorOpen;
+
+        yield return new WaitForSeconds(0.5f);
+
+        Vector3 newPlayerPosition = new Vector3(11.0f, 9.0f, 0.0f);
 
         gameObjectPlayer.transform.position += newPlayerPosition;
-        
+
+        door.GetComponent<SpriteRenderer>().sprite = doorClose;
+
     }
 }

@@ -12,29 +12,12 @@ namespace Player
 
         public Slider slider;
 
-        //public int SliderHp
-        //{
-        //    get
-        //    {
-        //        return _hp;
-        //    }
-
-        //    set
-        //    {
-        //        _hp = value;
-        //    }
-        //}
-
         private Animator anim;
+        private Transform p;
+
         private void Start()
         {
             anim = gameObject.GetComponent<Animator>();
-
-            //SliderHp = _hp;
-
-            //slider.value = SliderHp;
-
-            //Debug.Log("HP" + SliderHp);
         }
 
         public void ChangeSlidierValue(int value)
@@ -50,7 +33,7 @@ namespace Player
                 _hp -= value;
                 Debug.Log("_hp" + _hp);
                 //anim.SetTrigger("Hurt");
-                ReloadPlayer();
+                RepeatLevel();
                 Debug.Log("ReloadPlayer();");
                 ChangeSlidierValue(_hp);
 
@@ -88,9 +71,14 @@ namespace Player
 
             //gameObject.GetComponent<Sword>().CanTake = true;
 
-            gameObject.transform.position = new Vector3(-1.6f, 6.72f, 0.0f);
+            gameObject.transform.position = new Vector3(0f, 6.72f, 0.0f);
             
             //InHand = false;
+        }
+
+        private void RepeatLevel()
+        {
+            gameObject.transform.Translate(new Vector3(3.0f, 0.0f, 0.0f));
         }
     }
 }
